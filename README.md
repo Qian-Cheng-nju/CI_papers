@@ -1,6 +1,6 @@
 # CI Papers
 
-A reading list on continuous integration, focusing on LLM-based regression testing and continuous formal verification.
+A reading list on continuous integration, focusing on regression testing and continuous formal verification.
 
 ## LLM-based Regression Testing
 
@@ -13,6 +13,13 @@ A reading list on continuous integration, focusing on LLM-based regression testi
   Jing Liu, Seongmin Lee, Eleonora Losiouk, and Marcel Böhme; MPI-SP, UCLA, and the University of Padua.
 
   Studies commit-specific regression test generation within a short CI budget. Cleverest uses commit messages, code changes, and execution feedback; ClevFuzz uses the generated tests as fuzzing seeds. The evaluation covers both bug-introducing and bug-fixing commits.
+
+## Code and Configuration Changes
+
+- **[Test Selection for Unified Regression Testing](https://tianyin.github.io/pub/urts.pdf)** — ICSE 2023.
+  Shuai Wang, Xinyu Lian, Darko Marinov, and Tianyin Xu; UIUC.
+
+  Selects regression tests for code changes, production configuration changes, and their combination in CI/CD. uRTS tracks code and configuration dependencies across revisions and configurations to reduce end-to-end testing time while preserving the safety guarantees of existing regression test selection techniques.
 
 ## Continuous Formal Verification
 
