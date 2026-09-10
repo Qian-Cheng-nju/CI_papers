@@ -1,8 +1,8 @@
 # CI Papers
 
-A reading list on continuous integration, focusing on regression testing and continuous formal verification.
+A reading list on continuous integration and formal methods, with a focus on using software updates and their context to guide testing and verification.
 
-## LLM-based Regression Testing
+## CI
 
 - **[Just-in-Time Catching Test Generation at Meta](https://arxiv.org/pdf/2601.22832)** — FSE 2026, Industry.
   Matthew Becker et al., Meta.
@@ -14,14 +14,12 @@ A reading list on continuous integration, focusing on regression testing and con
 
   Studies commit-specific regression test generation within a short CI budget. Cleverest uses commit messages, code changes, and execution feedback; ClevFuzz uses the generated tests as fuzzing seeds. The evaluation covers both bug-introducing and bug-fixing commits.
 
-## Code and Configuration Changes
-
 - **[Test Selection for Unified Regression Testing](https://tianyin.github.io/pub/urts.pdf)** — ICSE 2023.
   Shuai Wang, Xinyu Lian, Darko Marinov, and Tianyin Xu; UIUC.
 
-  Selects regression tests for code changes, production configuration changes, and their combination in CI/CD. uRTS tracks code and configuration dependencies across revisions and configurations to reduce end-to-end testing time while preserving the safety guarantees of existing regression test selection techniques.
+  Uses information about what changed and which tests depend on it to decide what needs to be rerun. Tracking code dependencies and individual configuration parameters across revisions and configurations lets uRTS avoid redundant test executions while preserving the safety guarantees of existing regression test selection techniques.
 
-## Continuous Formal Verification
+## Formal Methods
 
 - **[Code-Level Model Checking in the Software Development Workflow at Amazon Web Services](https://cdn.amazon.science/4d/b0/504a2bbf4f3db18d98e37b8580df/code-level-model-checking-in-the-software-development-workflow-at-amazon-web-services.pdf)** — Software: Practice and Experience, 2021.
   Nathan Chong et al., AWS and academic collaborators.
